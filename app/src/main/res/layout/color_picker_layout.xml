@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#5D5D5D"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/txtColorPickerTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Inserte un color"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:columnCount="5"
+        android:rowCount="2"
+        android:padding="5dp">
+
+        <!-- Botones de colores predefinidos -->
+        <ImageButton
+            android:id="@+id/btnColor1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="#FF0000" /> <!-- Color rojo -->
+
+        <ImageButton
+            android:id="@+id/btnColor2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="#00FF00" /> <!-- Color verde -->
+
+        <ImageButton
+            android:id="@+id/btnColor3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="#0000FF" /> <!-- Color azul -->
+
+        <ImageButton
+            android:id="@+id/btnColor4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="#FFFF00" /> <!-- Color amarillo -->
+
+        <ImageButton
+            android:id="@+id/btnColor5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="#FF00FF" /> <!-- Color magenta -->
+
+        <ImageButton
+            android:id="@+id/btnColor6"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="#00FFFF" /> <!-- Color cyan -->
+
+        <ImageButton
+            android:id="@+id/btnColor7"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="#FFFFFF" /> <!-- Color blanco -->
+
+        <ImageButton
+            android:id="@+id/btnColor8"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="#000000" /> <!-- Color -->
+
+        <ImageButton
+            android:id="@+id/btnColor9"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="#FFA500" /> <!-- Color naranja -->
+
+        <ImageButton
+            android:id="@+id/btnColor10"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="#808080" /> <!-- Color gris -->
+
+
+    </GridLayout>
+
+</LinearLayout>

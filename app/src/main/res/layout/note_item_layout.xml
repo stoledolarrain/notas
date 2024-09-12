@@ -1,0 +1,46 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rectangular_background"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/lblNoteTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/btnEditNoteItem"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Nota 1" />
+
+    <TextView
+        android:id="@+id/lblNoteContent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnEditNoteItem"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblNoteTitle"
+        tools:text="Esta es mi primera nota" />
+
+    <ImageButton
+        android:id="@+id/btnDeleteNoteItem"
+        android:layout_width="39dp"
+        android:layout_height="43dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_delete" />
+
+    <ImageButton
+        android:id="@+id/btnEditNoteItem"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnDeleteNoteItem"
+        app:layout_constraintTop_toTopOf="@+id/btnDeleteNoteItem"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
+</androidx.constraintlayout.widget.ConstraintLayout>
